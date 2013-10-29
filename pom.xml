@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.zimory.ldapunit</groupId>
     <artifactId>ldapunit-parent</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Set up and expect LDAP server contents</description>
     <url>http://github.com/zimory/ldapunit</url>
