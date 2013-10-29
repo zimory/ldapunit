@@ -61,3 +61,18 @@ dn: cn=SomeOtherUser,dc=zimory,dc=com
 cn: SomeOtherUser
 objectClass: top
 ```
+## LDAP servers
+
+### Using com.unboundid.ldap.listener.InMemoryDirectoryServer
+Just instantiate ```com.zimory.ldapunit.core.InMemoryDirectoryServerAccess``` as shown in the example above and pass it to the LdapWatcher rule.
+### Using some other LDAP server implementation
+Provide an implementation of the ```com.zimory.ldapunit.core.DirectoryServerAccess``` interface yourself.
+
+## Distribution
+```
+<dependency>
+    <groupId>com.zimory.ldapunit</groupId>
+    <artifactId>ldapunit-core</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
