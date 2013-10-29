@@ -1,0 +1,3 @@
+dn: cn=SomeUser,dc=zimory,dc=com
+cn: SomeUser
+objectClass: top

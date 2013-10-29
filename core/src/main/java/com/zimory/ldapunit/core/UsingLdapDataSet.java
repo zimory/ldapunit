@@ -18,7 +18,7 @@ import java.lang.annotation.Target;
  *         public InMemoryDirectoryServer get() {
  *             return ldapServer;
  *         }
- *     }});
+ *     });
  * </pre>
  * Note that it's also possible to annotate the {@link org.junit.Before} methods: in this case, the importing will be
  * done before that of each {@link org.junit.Test} method.
