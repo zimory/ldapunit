@@ -8,9 +8,15 @@ Set up and expect LDAP server contents.
 ```
 import com.google.common.base.Supplier;
 import com.unboundid.ldap.listener.InMemoryDirectoryServer;
-import com.zimory.ldapunit.core.DirectoryServerAccess;
-import org.junit.rules.TestRule;
+
 import org.junit.Rule;
+import org.junit.Test;
+
+import com.zimory.ldapunit.core.ShouldMatchLdapDataSet;
+import com.zimory.ldapunit.core.UsingLdapDataSet;
+import com.zimory.ldapunit.core.LdapWatcher;
+import com.zimory.ldapunit.core.DirectoryServerAccess;
+import com.zimory.ldapunit.core.InMemoryDirectoryServerAccess;
 
 public class SomeIT extends AbstractIT {
 
