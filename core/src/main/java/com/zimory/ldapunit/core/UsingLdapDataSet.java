@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
  *
  * <pre>
  *     @{@link org.junit.Rule}
- *     public {@link org.junit.rules.TestRule} ldapWatcher = new LdapWatcher(new {@link javax.inject.Provider}&lt;{@link com.unboundid.ldap.listener.InMemoryDirectoryServer}&gt;() {
+ *     public {@link org.junit.rules.TestRule} ldapWatcher = new LdapWatcher(new {@link com.google.common.base.Supplier}&lt;{@link com.unboundid.ldap.listener.InMemoryDirectoryServer}&gt;() {
  *        {@literal @}Override
  *         public InMemoryDirectoryServer get() {
  *             return ldapServer;
