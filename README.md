@@ -9,7 +9,7 @@ Set up and expect LDAP server contents.
 import com.google.common.base.Supplier;
 import com.unboundid.ldap.listener.InMemoryDirectoryServer;
 
-import org.junit.Rule;
+import org.junit.Rule
 import org.junit.Test;
 
 import com.zimory.ldapunit.core.ShouldMatchLdapDataSet;
@@ -47,17 +47,17 @@ public class SomeIT extends AbstractIT {
 ### Datasets
 #### /ldifs/findAndAddNewEntry.ldif
 ```
-dn: cn=SomeUser,dc=zimory,dc=com
+dn: cn=SomeUser,dc=example,dc=com
 cn: SomeUser
 objectClass: top
 ```
 #### /ldifs/expected-findAndAddNewEntry.ldif
 ```
-dn: cn=SomeUser,dc=zimory,dc=com
+dn: cn=SomeUser,dc=example,dc=com
 cn: SomeUser
 objectClass: top
 
-dn: cn=SomeOtherUser,dc=zimory,dc=com
+dn: cn=SomeOtherUser,dc=example,dc=com
 cn: SomeOtherUser
 objectClass: top
 ```
